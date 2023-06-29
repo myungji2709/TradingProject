@@ -1,0 +1,118 @@
+#login {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f1f2f6;
+  height: 100vh;
+}
+#login .header_login {
+  width: 100%;
+  background: #fff;
+}
+#login .header_login .hinh {
+  width: 13%;
+  margin: 0 auto;
+}
+#login .header_login .hinh img {
+  width: 100%;
+  padding: 20px 0;
+}
+#login .body_login {
+  width: 25%;
+  margin: 30px auto 0;
+  background: #fff;
+}
+#login .body_login .login {
+  width: 100%;
+}
+#login .body_login .login .top {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+#login .body_login .login .top button {
+  width: 50%;
+  background: #fff;
+  border: none;
+  border-bottom: 2px black solid;
+  padding: 15px 0;
+  opacity: 0.5;
+  font-weight: 500;
+}
+#login .body_login .login .top .active {
+  opacity: 1;
+}
+#login .body_login .form {
+  width: 100%;
+}
+#login .body_login .form .form-input {
+  width: 90%;
+  margin: 30px auto 0;
+  display: none;
+}
+#login .body_login .form .form-input .form-group {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 3px;
+}
+#login .body_login .form .form-input input {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px 7px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+#login .body_login .form .form-input label {
+  color: gray;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  pointer-events: none;
+  transition: 0.4s;
+}
+#login .body_login .form .form-input .eye {
+  position: absolute;
+  font-size: 25px;
+  top: 6%;
+  right: 5%;
+}
+#login .body_login .form .form-input input:focus + label,
+#login .body_login .form .form-input input:valid + label {
+  font-size: 11px;
+  top: 20%;
+  transition: 0.4s;
+}
+#login .body_login .form .form-input p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+#login .body_login .form .form-input .btn {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#login .body_login .form .form-input .btn button {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+}
+#login .body_login .form .form-input.active {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  #login .body_login {
+    width: 100%;
+  }
+  #login .header_login .hinh {
+    width: 30%;
+  }
+}

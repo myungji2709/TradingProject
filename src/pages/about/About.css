@@ -1,0 +1,40 @@
+#about_pages {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+#about_pages .about_info {
+  width: 80%;
+  margin: 30px auto 0;
+}
+#about_pages .about_info .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+#about_pages .about_info .row .col {
+  width: calc(90% / 3);
+  flex: unset;
+}
+@media screen and (max-width: 767px) {
+  #about_pages .about_info {
+    width: 100%;
+    margin: 0;
+  }
+  #about_pages .about_info .row {
+    display: inline;
+    margin: 0;
+    padding: 0 20px;
+  }
+  #about_pages .about_info .row .col {
+    width: 100%;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+}

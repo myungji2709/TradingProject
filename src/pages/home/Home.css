@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#home {
+  width: 100%;
+}
+#home .info_product{
+  margin-bottom: 100px;
+}
+#home .menu_home {
+  width: 100%;
+  margin: 0 auto;
+  background: #dcdde1;
+}
+#home .menu_home .info_menu {
+  width: 50%;
+  margin: 0 auto;
+}
+#home .menu_home .info_menu ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  margin: 0;
+}
+#home .menu_home .info_menu ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-align: center;
+}
+#home .banner {
+  width: 100%;
+  margin: 0 auto;
+}
+#home .lists {
+  width: 80%;
+  margin: 0 auto;
+}
+#home .lists .productLiked {
+  margin: 30px auto 0px;
+  width: 100%;
+}
+#home .lists .popularBrand {
+  margin: 30px auto 0px;
+  width: 100%;
+}
+#home .lists .trendingSneakers {
+  margin: 30px auto 0px;
+  width: 100%;
+}
+#home .lists .clothing {
+  margin: 30px auto 0;
+  width: 100%;
+}
+#home .lists .accessories {
+  margin: 30px auto 0;
+  width: 100%;
+}
+#home .lists .electronic {
+  margin: 30px auto 0;
+  width: 100%;
+}
+#home .poster {
+  margin: 30px auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#home .poster img {
+  width: 50%;
+}
+#home .lists .info {
+  width: 100%;
+  margin-top: 30px;
+}
+#home .lists .info ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#home .lists .popularBrand .info li img {
+  width: 100%;
+}
+#home .lists .popularBrand .info li {
+  width: calc(90% / 5);
+}
+#home .lists .popularBrand .info ul {
+  width: 100%;
+}
+#home .lists .info .card {
+  width: 150px;
+}
+#home .lists .info .card img {
+  width: 100%;
+}
+#home .lists .title_home {
+  display: flex;
+  justify-content: space-between;
+}
+#home .lists .title_home h4 {
+  font-size: 20px;
+  width: 94%;
+}
+#home .seeAll {
+  width: 6%;
+  font-size: 15px;
+  text-align: left;
+  color: green;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  #home .menu_home .info_menu {
+    width: 100%;
+  }
+  #home .menu_home .info_menu ul {
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  #home .menu_home .info_menu ul li {
+    margin: 0 10px;
+  }
+  #home .lists {
+    width: 90%;
+  }
+  #home .lists .info .card {
+    margin: 0;
+  }
+  #home .lists .info ul {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  #home .lists .info ul li {
+    margin: 0 3px;
+  }
+  #home .seeAll {
+    font-size: 10px;
+    width: 15%;
+    line-height: 30px;
+  }
+}

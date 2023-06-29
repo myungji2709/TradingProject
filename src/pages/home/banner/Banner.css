@@ -1,0 +1,14 @@
+.carousel-inner{
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+}
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+    .carousel {
+        width: 100%;
+    }
+}

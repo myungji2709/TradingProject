@@ -1,0 +1,42 @@
+#news {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#news .news {
+  width: 80%;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+#news .news .hinh_news {
+  width: 60%;
+}
+#news .news .info_news {
+  width: 35%;
+  text-align: left;
+}
+#news .news .info_news button {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  background: #000;
+  border: none;
+  padding: 5px 30px;
+}
+@media screen and (max-width: 767px) {
+  #news .news {
+    width: 100%;
+    display: inline-block;
+  }
+  #news .news .hinh_news {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #news .news .info_news {
+    width: 95%;
+    margin: 0 auto;
+  }
+}

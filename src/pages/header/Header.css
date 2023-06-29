@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#header {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+}
+#header .menuside {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  background: #fff;
+  z-index: 6;
+  transition: 0.5s;
+  transform: translateX(-200%);
+  display: none;
+}
+#header .menuside.active {
+  transition: 0.5s;
+  transform: translateX(0%);
+}
+#header .menuside .borderSidetop {
+  width: 100%;
+  border-bottom:1px solid lightgray ;
+}
+#header .menuside .sidetop {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 13px 0;
+}
+#header .menuside .sidetop .btn_side {
+  width: 40%;
+  transition: 0.5s;
+}
+#header .menuside .sidetop a {
+  width: 60%;
+}
+#header .menuside .sidetop .logo {
+  width: 30%;
+}
+#header .menuside .navside {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#header .menuside .navside p {
+  margin: 0;
+}
+#header .menuside .navside a{
+  width: 100%;
+  align-items: center;
+}
+#header .menuside .itemside {
+  width: 100%;
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+#header .menuside .itemside p {
+  margin-left: 20px;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+#header .menuside .loginside {
+  margin: 10px auto 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+#header .menuside .loginside a{
+  width: 45%;
+}
+#header .menuside .loginside .btn_login {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background: #fff;
+  padding: 5px 0;
+}
+#header .menuside .loginside .btn_login:hover {
+  background: #000;
+  color: #fff;
+}
+#header .menuside .loginside .btn_signup {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  opacity: 0.7;
+  padding: 7px 0;
+  border: none;
+}
+#header .menuside .loginside .btn_signup:hover {
+  opacity: 1;
+}
+#header .menu {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+.menureposive {
+  width: 95%;
+  margin: 0 auto;
+  display: none;
+  padding: 13px 0;
+  align-items: flex-start;
+}
+.menuLeft {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuLeft a {
+  width: 20%;
+  text-align: center;
+}
+.logo {
+  width: 60%;
+}
+.search {
+  width: 85%;
+  position: relative;
+}
+.buttonSearch {
+  height: 39px;
+  padding-right: 10px;
+  font-size: 30px;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+}
+.search input {
+  height: 40px;
+  width: 100%;
+  padding: 0 20px 0 50px;
+}
+.search .searchInfo {
+  width: 100%;
+  border: 1px solid black;
+  border-top: none;
+  position: absolute;
+  background: #fff;
+  z-index: 5;
+  top : 98%;
+}
+.search .searchInfo .search_info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid lightgray;
+  padding-top: 15px;
+}
+.search .searchInfo .search_info .search_img {
+  width: 30%;
+}
+.search .searchInfo .search_info img {
+  width: 100%;
+}
+.search .searchInfo .search_info .search_title {
+  width: 70%;
+  color: #000;
+  font-size: 20px;
+  text-align: left;
+}
+.menureposive .searchside {
+  width: 90%;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding-bottom: 12px;
+}
+.menureposive .searchside a {
+  display: inline;
+}
+.menureposive .searchside .buttonSearch {
+  height: 39px;
+  padding-right: 10px;
+  font-size: 30px;
+  position: absolute;
+  top: 1%;
+  left: 8%;
+}
+.menureposive .searchside input {
+  height: 40px;
+  width: 90%;
+  padding: 0 20px 0 50px;
+}
+.menureposive .searchside .searchInfo {
+  width: 90%;
+  border: 1px #000 solid;
+  border-top: none;
+  position: absolute;
+  background: #fff;
+  top: 75%;
+}
+.menureposive .searchside .searchInfo .search_info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid lightgray;
+  padding-top: 15px;
+}
+.menureposive .searchside .searchInfo .search_info .search_img {
+  width: 30%;
+}
+.menureposive .searchside .searchInfo .search_info img {
+  width: 50%;
+}
+.menureposive .searchside .searchInfo .search_info .search_title {
+  width: 70%;
+  color: #000;
+  font-size: 15px;
+  text-align: left;
+}
+.menureposive .btn_searchside {
+  font-size: 25px;
+  line-height: 25px;
+}
+.menureposive .searchside.active {
+  display: none;
+}
+.menureposive .sidelogo.active {
+  display: inline;
+  text-align: center;
+}
+.menureposive .sidelogo {
+  display: none;
+}
+.menureposive .logo {
+  width: 20%;
+}
+.menuRight {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+}
+.navbar {
+  width: 70%;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.navbar .sneaker ul {
+  list-style: none;
+}
+.navbar .sneaker li {
+  position: relative;
+}
+.sneaker > ul > li::before {
+  content: "";
+  width: 2%;
+  height: 100%;
+  background: green;
+  position: absolute;
+  top: 0%;
+  left: 98%;
+  display: none;
+  z-index: 2;
+}
+.navbar .sneaker li {
+  position: relative;
+}
+.sneaker > ul > li:hover::before {
+  display: inline;
+}
+.sneaker:hover .sneaker2 {
+  display: block;
+}
+.navbar .sneaker2 {
+  width: 150px;
+  position: absolute;
+  display: none;
+  top: 80%;
+  left: -15%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  line-height: 40px;
+  z-index: 5;
+}
+.navbar .sneaker2 li:hover .sneaker3 {
+  display: block;
+}
+.navbar .sneaker3 {
+  width: 150px;
+  top: 0%;
+  left: 100%;
+  display: none;
+  position: absolute;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  line-height: 40px;
+  z-index: 5;
+}
+.sneaker3 li::before {
+  content: "";
+  width: 2%;
+  height: 100%;
+  background: green;
+  position: absolute;
+  top: 0%;
+  left: 98%;
+  display: none;
+}
+.sneaker3 li:hover::before {
+  display: inline;
+}
+.login {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.login a{
+  width: 100%;
+}
+.login .btn_login {
+  width: 90%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px 20px;
+  background: #fff;
+}
+.login .btn_login:hover {
+  background: #000;
+  color: #fff;
+}
+.login .btn_signup {
+  width: 95%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px 15px;
+  background: #000;
+  color: #fff;
+  opacity: 0.7;
+}
+.login .btn_signup:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  #header .menuside {
+    display: inline;
+  }
+  #header .menu{
+    display: none;
+  }
+  .searchside .searchInfo {
+    width: 90%;
+    left: 5%;
+    top: 98%;
+  }
+  .btn_searchside {
+    display: inline;
+  }
+  .menureposive {
+    display: flex;
+  }
+  .menuLeft {
+    width: 100%;
+    text-align: center;
+  }
+  .menuLeft .btn_side {
+    display: inline;
+  }
+  .menuLeft a {
+    width: 100%;
+  }
+  .menuLeft a .logo {
+    width: 20%;
+  }
+  .search {
+    display: none;
+  }
+  .menuRight {
+    display: none;
+  }
+}
