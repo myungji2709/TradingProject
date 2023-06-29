@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </div>
           <div className="popularBrand">
-          <div className="title_home">
+            <div className="title_home">
               <h4>Popular Brands</h4>
             </div>
             <div className="info">

@@ -7,8 +7,14 @@ import { AppContext } from "../../AppConText";
 import React from "react";
 
 export default function Login() {
-  const { checkLogin, setCheckLogin, checkSignup, setCheckSignup } =
-    useContext(AppContext);
+  const {
+    checkLogin,
+    setCheckLogin,
+    checkSignup,
+    setCheckSignup,
+    sweetalertSignin,
+    sweetalertLogin,
+  } = useContext(AppContext);
   const [eye, setEye] = useState(false);
   const [type, setType] = useState("password");
   return (
@@ -90,7 +96,7 @@ export default function Login() {
               At least 8 characters, 1 uppercase letter, 1 number & 1 symbol
             </p>
             <div className="btn">
-              <button>Sign Up</button>
+              <button onClick={() => sweetalertSignin()}>Sign Up</button>
             </div>
           </div>
           <div className={`form-input ${checkLogin}`}>
@@ -125,7 +131,13 @@ export default function Login() {
             </div>
             <p style={{ textAlign: "right" }}>Forgot the password?</p>
             <div className="btn">
-              <button>Log In</button>
+              <button
+                onClick={() => {
+                  sweetalertLogin();
+                }}
+              >
+                Log In
+              </button>
             </div>
           </div>
         </div>

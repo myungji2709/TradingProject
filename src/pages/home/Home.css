@@ -8,6 +8,7 @@
 }
 #home .info_product{
   margin-bottom: 100px;
+  padding-top: 73px;
 }
 #home .menu_home {
   width: 100%;
@@ -114,6 +115,9 @@
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
+  #home .info_product{
+    padding-top: 55px;
+  }
   #home .menu_home .info_menu {
     width: 100%;
   }

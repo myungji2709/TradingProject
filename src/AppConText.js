@@ -222,6 +222,22 @@ export const AppProvider = ({ children }) => {
       button: false,
     });
   };
+  const sweetalertLogin = () => {
+    Swal({
+      title: "You are logged in successfully.",
+      icon: "success",
+      timer: 1000,
+      button: false,
+    });
+  };
+  const sweetalertSignin = () => {
+    Swal({
+      title: "Sign up successfully! Please log in.",
+      icon: "success",
+      timer: 1000,
+      button: false,
+    });
+  };
   return (
     <AppContext.Provider
       value={{
@@ -272,6 +288,8 @@ export const AppProvider = ({ children }) => {
         setCheckLogin,
         checkSignup,
         setCheckSignup,
+        sweetalertLogin,
+        sweetalertSignin,
       }}
     >
       {children}
