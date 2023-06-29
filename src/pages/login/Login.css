@@ -5,6 +5,7 @@
   box-sizing: border-box;
   background: #f1f2f6;
   height: 100vh;
+  font-family: 'Lato', sans-serif;
 }
 #login .header_login {
   width: 100%;
@@ -76,7 +77,7 @@
 #login .body_login .form .form-input .eye {
   position: absolute;
   font-size: 25px;
-  top: 6%;
+  top: 27%;
   right: 5%;
 }
 #login .body_login .form .form-input input:focus + label,

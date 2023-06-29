@@ -1,28 +1,29 @@
-.card{
-    width: calc(90%/4);
-    text-align: center;
-    margin: 0 0 30px 23px
+.card {
+  width: calc(90% / 4);
+  text-align: center;
+  margin: 0 0 30px 23px;
+  font-family: "Lato", sans-serif;
 }
-.card .thumb{
-    position: relative;
-    width: 100%;
-    padding: 10px;
+.card .thumb {
+  position: relative;
+  width: 100%;
+  padding: 10px;
 }
-.card .thumb img{
-    width: 200px;
+.card .thumb img {
+  width: 200px;
 }
-.card .like{
-    position: absolute;
-    top: 0%;
-    left: 40%;
-    width: 100%;
-    justify-content: space-around;
+.card .like {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  width: 100%;
+  justify-content: space-around;
 }
 .card .buy {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
-.swal-text{
-    text-align: center;
+.swal-text {
+  text-align: center;
 }

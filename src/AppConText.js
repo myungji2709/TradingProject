@@ -20,6 +20,7 @@ export const AppProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [checkLogin, setCheckLogin] = useState("");
   const [checkSignup, setCheckSignup] = useState("");
+  const [active2, setActive2] = useState("");
 
   const getData = async () => {
     const url = `https://645cd5a1250a246ae30f99fc.mockapi.io/list`;
@@ -225,6 +226,7 @@ export const AppProvider = ({ children }) => {
   const sweetalertLogin = () => {
     Swal({
       title: "You are logged in successfully.",
+      text: "Welcome back to us.",
       icon: "success",
       timer: 1000,
       button: false,
@@ -233,6 +235,7 @@ export const AppProvider = ({ children }) => {
   const sweetalertSignin = () => {
     Swal({
       title: "Sign up successfully! Please log in.",
+      text: "Welcome to contact us.",
       icon: "success",
       timer: 1000,
       button: false,
@@ -290,6 +293,8 @@ export const AppProvider = ({ children }) => {
         setCheckSignup,
         sweetalertLogin,
         sweetalertSignin,
+        active2,
+        setActive2,
       }}
     >
       {children}

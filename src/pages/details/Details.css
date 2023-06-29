@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 #detail .detail_inside {
   width: 80%;
   margin: 0 auto 50px;
+  padding-top: 70px;
 }
 #detail .top {
   display: flex;

@@ -2,15 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 #product {
   width: 100%;
+  position: relative;
 }
 
 #product .productList {
   width: 80%;
   display: flex;
   margin: 50px auto;
+  padding-top: 50px;
 }
 
 #product .left {
@@ -171,8 +174,12 @@
   #product .soft .right {
     width: 80%;
     position: relative;
+    font-size: 15px;
   }
   #product .soft .btn_side .btn_filterside{
     display: flex;
+  }
+  #product .menureposive{
+    width: 92%;
   }
 }

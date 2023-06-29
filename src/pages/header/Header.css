@@ -2,14 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 #header {
   width: 100%;
   margin: 0 auto;
   border: 1px solid lightgray;
-  z-index: 100;
   background: #fff;
-  position: fixed;
 }
 #header .menuside {
   width: 100%;
@@ -17,7 +16,7 @@
   position: absolute;
   top: 0%;
   background: #fff;
-  z-index: 6;
+  z-index: 9999;
   transition: 0.5s;
   transform: translateX(-200%);
   display: none;
@@ -115,9 +114,14 @@
   opacity: 1;
 }
 #header .menu {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  position: fixed;
+  background: #fff;
+  z-index: 5;
+  top: 0;
 }
 .menureposive {
   width: 95%;
@@ -127,7 +131,7 @@
   align-items: flex-start;
 }
 .menuLeft {
-  width: 50%;
+  width: 48%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -257,10 +261,10 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 50%;
+  width: 48%;
 }
 .navbar {
-  width: 70%;
+  width: 60%;
   list-style: none;
   justify-content: space-around;
   align-items: center;
@@ -332,7 +336,7 @@
   display: inline;
 }
 .login {
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: space-around;
 }
@@ -366,7 +370,7 @@
 }
 @media screen and (max-width: 767px) {
   #header .menuside {
-    display: inline;
+    display: block;
   }
   #header .menu {
     display: none;
@@ -381,6 +385,11 @@
   }
   .menureposive {
     display: flex;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
   .menuLeft {
     width: 100%;

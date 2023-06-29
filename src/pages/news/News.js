@@ -10,7 +10,7 @@ export default function News() {
   return (
     <div id="news">
       <Header />
-      <h1 style={{textAlign:"center"}}>News About Sneakers</h1>
+      <h1 style={{textAlign:"center",paddingTop:"70px"}}>News About Sneakers</h1>
       <div className="news">
         <div className="hinh_news">
           <img src={hinh1} alt="" style={{ width: "100%" }} />

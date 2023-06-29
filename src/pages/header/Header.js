@@ -25,6 +25,8 @@ export default function Header() {
     setCheckSignup,
     addDetails,
     addName,
+    active2,
+    setActive2,
   } = useContext(AppContext);
   const [input, setInput] = useState("");
   const handleChange = (e) => {

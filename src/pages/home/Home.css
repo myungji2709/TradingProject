@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 #home {
   width: 100%;
 }
 #home .info_product{
   margin-bottom: 100px;
-  padding-top: 73px;
+  padding-top: 70px;
 }
 #home .menu_home {
   width: 100%;
@@ -16,7 +17,7 @@
   background: #dcdde1;
 }
 #home .menu_home .info_menu {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 #home .menu_home .info_menu ul {
@@ -115,9 +116,6 @@
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
-  #home .info_product{
-    padding-top: 55px;
-  }
   #home .menu_home .info_menu {
     width: 100%;
   }
@@ -146,5 +144,8 @@
     font-size: 10px;
     width: 15%;
     line-height: 30px;
+  }
+  #home .info_product{
+    padding-top: 50px;
   }
 }

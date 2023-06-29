@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div id="about_pages">
       <Header />
-      <h1 style={{marginTop:"0px"}}>About Us</h1>
+      <h1 style={{marginTop:"0px",paddingTop:"70px"}}>About Us</h1>
       <div className="about_info">
         <div className="row">
           <div className="col">

@@ -5,6 +5,7 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useContext, useState } from "react";
 import { AppContext } from "../../AppConText";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const {
@@ -17,6 +18,7 @@ export default function Login() {
   } = useContext(AppContext);
   const [eye, setEye] = useState(false);
   const [type, setType] = useState("password");
+  const navigate = useNavigate();
   return (
     <div id="login">
       <div className="header_login">
@@ -96,7 +98,15 @@ export default function Login() {
               At least 8 characters, 1 uppercase letter, 1 number & 1 symbol
             </p>
             <div className="btn">
-              <button onClick={() => sweetalertSignin()}>Sign Up</button>
+              <button
+                onClick={() => {
+                  sweetalertSignin();
+                  setCheckSignup("")
+                  setCheckLogin("active")
+                }}
+              >
+                Sign Up
+              </button>
             </div>
           </div>
           <div className={`form-input ${checkLogin}`}>
@@ -134,6 +144,7 @@ export default function Login() {
               <button
                 onClick={() => {
                   sweetalertLogin();
+                  navigate("/");
                 }}
               >
                 Log In

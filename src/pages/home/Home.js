@@ -148,7 +148,12 @@ export default function Home() {
             <div className="title_home">
               <h4>Trending Sneakers</h4>
               <p className="seeAll">
-                See All <AiOutlineArrowRight style={{ color: "green" }} />
+                <Link
+                  to="/sneakers"
+                  style={{ textDecoration: "none", color: "green" }}
+                >
+                  See All <AiOutlineArrowRight style={{ color: "green" }} />
+                </Link>
               </p>
             </div>
             <div className="info">
@@ -229,7 +234,12 @@ export default function Home() {
             <div className="title_home">
               <h4>Apparel</h4>
               <div className="seeAll">
-                See All <AiOutlineArrowRight style={{ color: "green" }} />
+                <Link
+                  to="/sneakers"
+                  style={{ textDecoration: "none", color: "green" }}
+                >
+                  See All <AiOutlineArrowRight style={{ color: "green" }} />
+                </Link>
               </div>
             </div>
             <div className="info">
@@ -247,7 +257,12 @@ export default function Home() {
             <div className="title_home">
               <h4>Accessories</h4>
               <p className="seeAll">
-                See All <AiOutlineArrowRight style={{ color: "green" }} />
+                <Link
+                  to="/sneakers"
+                  style={{ textDecoration: "none", color: "green" }}
+                >
+                  See All <AiOutlineArrowRight style={{ color: "green" }} />
+                </Link>
               </p>
             </div>
             <div className="info">
@@ -265,7 +280,12 @@ export default function Home() {
             <div className="title_home">
               <h4>Electronic</h4>
               <p className="seeAll">
-                See All <AiOutlineArrowRight style={{ color: "green" }} />
+                <Link
+                  to="/sneakers"
+                  style={{ textDecoration: "none", color: "green" }}
+                >
+                  See All <AiOutlineArrowRight style={{ color: "green" }} />
+                </Link>
               </p>
             </div>
             <div className="info">
