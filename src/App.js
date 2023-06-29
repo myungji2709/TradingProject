@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <AppProvider>
         <Routes>
-          <Route path="/tradingproject" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/:type" element={<Product />} />
           <Route path="/detail" element={<Details />} />
           <Route path="/shoppingcart" element={<Cart />} />
