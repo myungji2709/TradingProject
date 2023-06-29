@@ -2,7 +2,7 @@
   "name": "tradingproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myungji2709.github.io/tradingproject/",
+  "homepage": "https://myungji2709.github.io/TradingProject/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
