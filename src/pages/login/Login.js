@@ -144,7 +144,7 @@ export default function Login() {
               <button
                 onClick={() => {
                   sweetalertLogin();
-                  navigate("/");
+                  navigate("/tradingproject");
                 }}
               >
                 Log In

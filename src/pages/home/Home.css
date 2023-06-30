@@ -128,7 +128,7 @@
     margin: 0 10px;
   }
   #home .lists {
-    width: 90%;
+    width: 100%;
   }
   #home .lists .info .card {
     margin: 0;
@@ -146,6 +146,6 @@
     line-height: 30px;
   }
   #home .info_product{
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }

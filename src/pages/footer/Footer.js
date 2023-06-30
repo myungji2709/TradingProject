@@ -42,19 +42,19 @@ export default function Footer() {
                   <span class="ms-2">+84 12 345 6789</span>
                 </div>
                 <div class="mt-4">
-                  <a href="/" type="button" class="btn_icons">
+                  <a href="/tradingproject" type="button" class="btn_icons">
                     <FaFacebookF />
                   </a>
 
-                  <a href="/" type="button" class="btn_icons">
+                  <a href="/tradingproject" type="button" class="btn_icons">
                     <FaInstagram />
                   </a>
 
-                  <a href="/" type="button" class="btn_icons">
+                  <a href="/tradingproject" type="button" class="btn_icons">
                     <FaTwitter />
                   </a>
 
-                  <a href="/" type="button" class="btn_icons">
+                  <a href="/tradingproject" type="button" class="btn_icons">
                     <FaGooglePlusG style={{ textAlign: "center" }} />
                   </a>
                 </div>

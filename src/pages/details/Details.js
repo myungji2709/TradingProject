@@ -54,7 +54,7 @@ export default function Details() {
                 marginTop: "2px",
               }}
             />
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Link to="/tradingproject" style={{ textDecoration: "none", color: "black" }}>
               <IoMdExit style={{ fontSize: "25px" }} />
             </Link>
           </div>

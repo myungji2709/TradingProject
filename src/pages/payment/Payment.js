@@ -168,7 +168,7 @@ export default function Payment() {
         </div>
       </div>
       <div className="btn_pay">
-        <Link to="/">
+        <Link to="/tradingproject">
           <button
             onClick={() => {
               sweetalertPayment();

@@ -49,7 +49,7 @@ export default function Header() {
               />
             </div>
             <Link
-              to="/"
+              to="/tradingproject"
               onClick={() => {
                 setCheck(false);
                 setList(null);
@@ -161,7 +161,7 @@ export default function Header() {
         </div>
         <div className={`sidelogo ${active1}`}>
           <Link
-            to="/"
+            to="/tradingproject"
             onClick={() => {
               setCheck(false);
               setList(null);
@@ -229,7 +229,7 @@ export default function Header() {
       <div className="menu">
         <div className="menuLeft">
           <Link
-            to="/"
+            to="/tradingproject"
             onClick={() => {
               setCheck(false);
               setList(null);
