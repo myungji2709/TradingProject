@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 #home {
   width: 100%;
 }
-#home .info_product{
+#home .info_product {
   margin-bottom: 100px;
   padding-top: 70px;
 }
@@ -85,6 +85,9 @@
   display: flex;
   justify-content: space-between;
 }
+#home .lists .info ul li {
+  width: 100%;
+}
 #home .lists .popularBrand .info li img {
   width: 100%;
 }
@@ -95,7 +98,8 @@
   width: 100%;
 }
 #home .lists .info .card {
-  width: 150px;
+  width: 95%;
+  margin: 0 auto;
 }
 #home .lists .info .card img {
   width: 100%;
@@ -130,22 +134,44 @@
   #home .lists {
     width: 100%;
   }
+  #home .lists {
+    margin-left: 5px;
+  }
   #home .lists .info .card {
     margin: 0;
+    width: 180px;
   }
   #home .lists .info ul {
     justify-content: flex-start;
     overflow-x: scroll;
   }
   #home .lists .info ul li {
-    margin: 0 3px;
+    margin-right: 10px;
+    width: 180px;
   }
   #home .seeAll {
     font-size: 10px;
     width: 15%;
     line-height: 30px;
   }
-  #home .info_product{
+  #home .info_product {
     padding-top: 60px;
+  }
+  #home .lists .popularBrand .info {
+    width: 100%;
+  }
+  #home .lists .popularBrand .info ul {
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #home .lists .popularBrand .info li {
+    width: 180px;
+    margin-right: 10px;
+    padding: 5px 5px;
+  }
+  #home .lists .popularBrand .info li img {
+    width: 180px;
   }
 }
