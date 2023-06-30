@@ -121,7 +121,7 @@ export default function Details() {
                   </Link>
                 </div>
                 <div className="btn_See">
-                  <Link to="/sneaker" style={{ textDecoration: "none" }}>
+                  <Link to="/sneakers" style={{ textDecoration: "none" }}>
                     <button>See More Products In Store</button>
                   </Link>
                 </div>

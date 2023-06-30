@@ -24,7 +24,7 @@ export default function Home() {
             <ul>
               <li onClick={() => setType("Sneaker")}>
                 <Link
-                  to="/sneaker"
+                  to="/sneakers"
                   style={{ textDecoration: "none", color: "black" }}
                 >
                   Sneakers
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
             <div className="info">
               <ul>
-                <li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -100,8 +100,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -110,8 +110,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -120,8 +120,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -130,8 +130,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -140,7 +140,7 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
+                </Link></li>
               </ul>
             </div>
           </div>
@@ -168,8 +168,8 @@ export default function Home() {
             </div>
           </div>
           <div className="poster">
-            <img src={hinh} alt="" />
-            <img src={hinh2} alt="" />
+            <Link to="/sneakers"><img src={hinh} alt="" /></Link>
+            <Link to="/sneakers"><img src={hinh2} alt="" /></Link>
           </div>
           <div className="popularBrand">
             <div className="title_home">
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
             <div className="info">
               <ul>
-                <li>
+              <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -186,8 +186,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -196,8 +196,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -206,8 +206,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -216,8 +216,8 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
-                <li>
+                </Link></li>
+                <li><Link to="/sneakers">
                   <img
                     src={hinh3}
                     alt=""
@@ -226,7 +226,7 @@ export default function Home() {
                         "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                     }}
                   />
-                </li>
+                </Link></li>
               </ul>
             </div>
           </div>

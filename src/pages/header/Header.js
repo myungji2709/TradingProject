@@ -70,7 +70,7 @@ export default function Header() {
           <p>Browser</p>
           <span style={{ fontSize: "15px" }}>
             <Link
-              to="/sneaker"
+              to="/sneakers"
               style={{ textDecoration: "none", color: "darkgreen" }}
             >
               Browser All

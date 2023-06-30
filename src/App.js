@@ -18,7 +18,11 @@ function App() {
       <AppProvider>
         <Routes>
           <Route path="/tradingproject" element={<Home />} />
-          <Route path="/:type" element={<Product />} />
+          <Route path="/sneakers" element={<Product />} />
+          <Route path="/shoes" element={<Product />} />
+          <Route path="/apparels" element={<Product />} />
+          <Route path="/accessories" element={<Product />} />
+          <Route path="/electronics" element={<Product />} />
           <Route path="/detail" element={<Details />} />
           <Route path="/shoppingcart" element={<Cart />} />
           <Route path="/payment" element={<Payment />} />

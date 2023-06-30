@@ -34,7 +34,7 @@ function Cart() {
         <div className="top_shop">
           <h1>Your Bag</h1>
           <p>
-            <Link to="/sneaker" style={{ color: "black" }}>
+            <Link to="/sneakers" style={{ color: "black" }}>
               Continue Shopping
             </Link>
           </p>
