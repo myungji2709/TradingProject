@@ -306,7 +306,7 @@ export default function Header() {
           <ul className="navbar">
             <li className="sneaker">
               <Link
-                to="/sneaker"
+                to="/sneakers"
                 style={{ textDecoration: "none", color: "black" }}
               >
                 Browser
@@ -314,7 +314,7 @@ export default function Header() {
               <ul className="sneaker2">
                 <li onClick={() => setType("Sneaker")}>
                   <Link
-                    to="/sneaker"
+                    to="/sneakers"
                     style={{ textDecoration: "none", color: "black" }}
                   >
                     Sneakers
@@ -324,7 +324,7 @@ export default function Header() {
                       data.map((item, index) => (
                         <li key={index}>
                           <Link
-                            to="/sneaker"
+                            to="/sneakers"
                             style={{ textDecoration: "none", color: "black" }}
                             onClick={() => {
                               filterBrand(item.brand);
