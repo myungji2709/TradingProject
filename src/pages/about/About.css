@@ -40,4 +40,8 @@
     line-height: normal;
     margin-bottom: 30px;
   }
+  #about_pages #header .sidetop {
+    justify-content: flex-start;
+    text-align: left;
+  }
 }

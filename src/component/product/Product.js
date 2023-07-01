@@ -521,7 +521,7 @@ export default function Product() {
                 ""
               )}
             </div>
-            <div className="right">
+            <div className="right_soft">
               <table>
                 <thead>
                   <tr>

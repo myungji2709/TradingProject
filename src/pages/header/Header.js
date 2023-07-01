@@ -37,120 +37,144 @@ export default function Header() {
   const [active1, setActive1] = useState("active");
   return (
     <div id="header">
-      <div className={`menuside ${active}`}>
-        <div className="borderSidetop">
-          <div className="sidetop">
-            <div className="btn_side">
-              <MdClose
-                style={{ fontSize: "30px" }}
+      <div className="menureposive">
+        <div className={`menuside ${active}`}>
+          <div className="borderSidetop">
+            <div className="sidetop">
+              <div className="btn_side">
+                <MdClose
+                  style={{ fontSize: "30px" }}
+                  onClick={() => {
+                    setActive("");
+                  }}
+                />
+              </div>
+              <Link
+                to="/tradingproject"
                 onClick={() => {
-                  setActive("");
+                  setCheck(false);
+                  setList(null);
+                  setBrand(null);
+                  setSizetype(null);
+                  setSize(null);
+                  setPrice(null);
+                  setRelease(null);
+                  setTitle("All");
                 }}
-              />
+                className="sidelogo"
+              >
+                <img src={hinh} alt="" className="logo" />
+              </Link>
+            </div>
+          </div>
+          <div className="borderSidebot">
+            <div className="navside">
+              <p>Browser</p>
+              <span style={{ fontSize: "15px" }}>
+                <Link
+                  to="/sneakers"
+                  style={{ textDecoration: "none", color: "darkgreen" }}
+                >
+                  Browser All
+                </Link>
+              </span>
             </div>
             <Link
-              to="/tradingproject"
-              onClick={() => {
-                setCheck(false);
-                setList(null);
-                setBrand(null);
-                setSizetype(null);
-                setSize(null);
-                setPrice(null);
-                setRelease(null);
-                setTitle("All");
-              }}
-              className="sidelogo"
-            >
-              <img src={hinh} alt="" className="logo" />
-            </Link>
-          </div>
-        </div>
-        <div className="navside">
-          <p>Browser</p>
-          <span style={{ fontSize: "15px" }}>
-            <Link
               to="/sneakers"
-              style={{ textDecoration: "none", color: "darkgreen" }}
+              style={{ textDecoration: "none", color: "black" }}
             >
-              Browser All
+              <div className="itemside" onClick={() => setType("Sneaker")}>
+                <p>Sneakers</p>
+                <MdNavigateNext
+                  style={{ fontSize: "25px", marginRight: "10px" }}
+                />
+              </div>
             </Link>
-          </span>
-        </div>
-        <Link to="/sneakers" style={{ textDecoration: "none", color: "black" }}>
-          <div className="itemside" onClick={() => setType("Sneaker")}>
-            <p>Sneakers</p>
-            <MdNavigateNext style={{ fontSize: "25px", marginRight: "10px" }} />
-          </div>
-        </Link>
-        <Link to="/shoes" style={{ textDecoration: "none", color: "black" }}>
-          <div className="itemside" onClick={() => setType("Shoes")}>
-            <p>Shoes</p>
-            <MdNavigateNext style={{ fontSize: "25px", marginRight: "10px" }} />
-          </div>
-        </Link>
-        <Link to="/apparels" style={{ textDecoration: "none", color: "black" }}>
-          <div className="itemside" onClick={() => setType("Apparels")}>
-            <p>Apparels</p>
-            <MdNavigateNext style={{ fontSize: "25px", marginRight: "10px" }} />
-          </div>
-        </Link>
-        <Link
-          to="/accessories"
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          <div className="itemside" onClick={() => setType("Accessories")}>
-            <p>Accessories</p>
-            <MdNavigateNext style={{ fontSize: "25px", marginRight: "10px" }} />
-          </div>
-        </Link>
-        <Link
-          to="/electronics"
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          <div className="itemside" onClick={() => setType("Electronics")}>
-            <p>Electronics</p>
-            <MdNavigateNext style={{ fontSize: "25px", marginRight: "10px" }} />
-          </div>
-        </Link>
-        <Link to="/news" style={{ textDecoration: "none", color: "black" }}>
-          <div className="navside">News</div>
-        </Link>
-        <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
-          <div className="navside">About</div>
-        </Link>
-        <Link
-          to="/shoppingcart"
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          <div className="navside">Shopping Cart</div>
-        </Link>
-        <div className="loginside">
-          <Link to="/accounts">
-            <button
-              className="btn_login"
-              onClick={() => {
-                setCheckLogin("active");
-                setCheckSignup("");
-              }}
+            <Link
+              to="/shoes"
+              style={{ textDecoration: "none", color: "black" }}
             >
-              Login
-            </button>
-          </Link>
-          <Link to="/accounts">
-            <button
-              className="btn_signup"
-              onClick={() => {
-                setCheckLogin("");
-                setCheckSignup("active");
-              }}
+              <div className="itemside" onClick={() => setType("Shoes")}>
+                <p>Shoes</p>
+                <MdNavigateNext
+                  style={{ fontSize: "25px", marginRight: "10px" }}
+                />
+              </div>
+            </Link>
+            <Link
+              to="/apparels"
+              style={{ textDecoration: "none", color: "black" }}
             >
-              Sign Up
-            </button>
-          </Link>
+              <div className="itemside" onClick={() => setType("Apparels")}>
+                <p>Apparels</p>
+                <MdNavigateNext
+                  style={{ fontSize: "25px", marginRight: "10px" }}
+                />
+              </div>
+            </Link>
+            <Link
+              to="/accessories"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <div className="itemside" onClick={() => setType("Accessories")}>
+                <p>Accessories</p>
+                <MdNavigateNext
+                  style={{ fontSize: "25px", marginRight: "10px" }}
+                />
+              </div>
+            </Link>
+            <Link
+              to="/electronics"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <div className="itemside" onClick={() => setType("Electronics")}>
+                <p>Electronics</p>
+                <MdNavigateNext
+                  style={{ fontSize: "25px", marginRight: "10px" }}
+                />
+              </div>
+            </Link>
+            <Link to="/news" style={{ textDecoration: "none", color: "black" }}>
+              <div className="navside">News</div>
+            </Link>
+            <Link
+              to="/about"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <div className="navside">About</div>
+            </Link>
+            <Link
+              to="/shoppingcart"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <div className="navside">Shopping Cart</div>
+            </Link>
+            <div className="loginside">
+              <Link to="/accounts">
+                <button
+                  className="btn_login"
+                  onClick={() => {
+                    setCheckLogin("active");
+                    setCheckSignup("");
+                  }}
+                >
+                  Login
+                </button>
+              </Link>
+              <Link to="/accounts">
+                <button
+                  className="btn_signup"
+                  onClick={() => {
+                    setCheckLogin("");
+                    setCheckSignup("active");
+                  }}
+                >
+                  Sign Up
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="menureposive">
         <div className="btn_side">
           <MdMenu
             style={{ fontSize: "30px" }}

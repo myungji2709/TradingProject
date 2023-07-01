@@ -6,7 +6,6 @@
 }
 #product {
   width: 100%;
-  position: relative;
 }
 
 #product .productList {
@@ -85,26 +84,26 @@
   margin-right: 10px;
   border: 1px solid lightgray;
 }
-#product .soft .right {
+#product .soft .right_soft {
   width: 22%;
-  z-index: 1;
+  z-index: 999;
   display: flex;
   justify-content: flex-end;
 }
-#product .soft .right table button {
+#product .soft .right_soft table button {
   padding: 13px 30px;
   background: #fff;
   border: lightgray 1px solid;
   text-align: left;
 }
-#product .soft .right table .title {
+#product .soft .right_soft table .title {
   display: none;
   border: 1px solid lightgray;
   border-top: none;
   background: #fff;
   padding: 5px 10px;
 }
-#product .soft .right table .title.active {
+#product .soft .right_soft table .title.active {
   display: flex;
 }
 #product .info {
@@ -124,7 +123,7 @@
     width: 100%;
     z-index: 2;
     background: #fff;
-    top: 10%;
+    top: 20%;
     padding-top: 20px;
   }
   #product .left.active{
@@ -171,7 +170,7 @@
   #product .soft .btn_side button {
     width: 100%;
   }
-  #product .soft .right {
+  #product .soft .right_soft {
     width: 80%;
     position: relative;
     font-size: 15px;
@@ -179,7 +178,10 @@
   #product .soft .btn_side .btn_filterside{
     display: flex;
   }
-  #product .menureposive{
+  #product .sidelogo {
+    width: 74%;
+  }
+  #product #header .menuside {
     width: 92%;
   }
 }
